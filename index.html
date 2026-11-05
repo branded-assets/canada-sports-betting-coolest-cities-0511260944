@@ -269,6 +269,43 @@ html,body{margin:0!important;padding:0!important}
 
 @media(max-width:530px){#rg-research-root .rg-sixmetrics{grid-template-columns:1fr;gap:4px}#rg-research-root .rg-sixmetrics .rg-six-item{min-height:34px;padding:5px 9px}}
 #rg-research-root .rg-sixmetrics .rg-six-item{cursor:help}
+
+/* CSB SCROLL THEME — GitHub document + its inner scroll regions.
+   Parent WordPress and ChatGPT file preview have their own scrollbars. */
+:root, html, body {
+  color-scheme: light;
+  scrollbar-width: thin !important;
+  scrollbar-color: #CF1734 #F8F2F4 !important;
+}
+#rg-research-root,
+#rg-research-root :is(.rg-scroll,.rg-navtrack,.rg-tabset,.rg-listbox) {
+  scrollbar-width: thin !important;
+  scrollbar-color: #CF1734 #F8F2F4 !important;
+}
+:is(html,body,#rg-research-root)::-webkit-scrollbar,
+#rg-research-root :is(.rg-scroll,.rg-navtrack,.rg-tabset,.rg-listbox)::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+:is(html,body,#rg-research-root)::-webkit-scrollbar-track,
+#rg-research-root :is(.rg-scroll,.rg-navtrack,.rg-tabset,.rg-listbox)::-webkit-scrollbar-track {
+  background: #F8F2F4;
+  border-radius: 999px;
+}
+:is(html,body,#rg-research-root)::-webkit-scrollbar-thumb,
+#rg-research-root :is(.rg-scroll,.rg-navtrack,.rg-tabset,.rg-listbox)::-webkit-scrollbar-thumb {
+  background: #CF1734;
+  border: 2px solid #F8F2F4;
+  border-radius: 999px;
+}
+:is(html,body,#rg-research-root)::-webkit-scrollbar-thumb:hover,
+#rg-research-root :is(.rg-scroll,.rg-navtrack,.rg-tabset,.rg-listbox)::-webkit-scrollbar-thumb:hover {
+  background: #A9152D;
+}
+:is(html,body,#rg-research-root)::-webkit-scrollbar-corner,
+#rg-research-root :is(.rg-scroll,.rg-navtrack,.rg-tabset,.rg-listbox)::-webkit-scrollbar-corner {
+  background: #F8F2F4;
+}
 </style>
 <div id="rg-research-root">
 <header class="rg-statband"><div class="rg-wrap"><div class="rg-statbar"><div class="rg-word">Canada <em>Sports Betting</em> <span style="color:#F6A7B4;font-size:12px;font-weight:600;margin-left:9px">Research</span></div><div class="rg-statnote">150 selected US and Canadian cities · November 2026 snapshot</div></div></div></header>
